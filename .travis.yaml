@@ -4,7 +4,7 @@ env:
   global:
     - VERSION=0.1
     - ORG_NAME=theoriginaltonystark
-    - IMAGE_NAME=$ibmcloudcli
+    - IMAGE_NAME=ibmcloudcli
     
 script:
 - docker build -t $ORG_NAME/$IMAGE_NAME:$VERSION .
