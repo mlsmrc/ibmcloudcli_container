@@ -3,14 +3,14 @@ dist: bionic
 env:
   global:
     - VERSION=0.1
-    - ORG_NAME=theoriginaltonystark
+    - USER_NAME=mlsmrc
     - IMAGE_NAME=ibmcloudcli
-    
+
 script:
-- docker build -t $ORG_NAME/$IMAGE_NAME:$VERSION .
-- docker build -t $ORG_NAME/$IMAGE_NAME:latest .
+- docker build -t $USER_NAME/$IMAGE_NAME:$VERSION .
+- docker build -t $USER_NAME/$IMAGE_NAME:latest .
 
 after_success:
-- echo $DOCKER_PWD | docker login -u $ORG_NAME --password-stdin
-- docker push $ORG_NAME/$IMAGE_NAME:latest
-- docker push $ORG_NAME/$IMAGE_NAME:latest
+- echo $DOCKER_PWD | docker login -u $USER_NAME --password-stdin
+- docker push $USER_NAME/$IMAGE_NAME:$VERSION
+- docker push $USER_NAME/$IMAGE_NAME:latest
