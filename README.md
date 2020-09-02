@@ -4,6 +4,7 @@
 
 [![Base image Alpine](https://img.shields.io/badge/Base%20image-Alpine-brightgreen)](https://hub.docker.com/_/alpine)
 [![IBMCloud cli](https://img.shields.io/badge/IBM%20Cloud-cli-blue)](https://cloud.ibm.com)
+[![Build Status](https://travis-ci.org/mlsmrc/ibmcloudcli_container.svg?branch=master)](https://travis-ci.org/mlsmrc/ibmcloudcli_container)
 
 ## Description
 This is the **non-official** IBM Cloud cli container.
