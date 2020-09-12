@@ -11,7 +11,7 @@ This is the **non-official** IBM Cloud cli container.
 
 The main idea of this container is use it as K8s Job or Cronjob in order to perform scheduled actions on Cloud like monitoring or certificate renewal.
 
-**Size:** ~100Mb 
+**Size:** ~35Mb
 
 ## What is installed inside of it?
 
