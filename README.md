@@ -4,16 +4,21 @@
 
 [![Base image Alpine](https://img.shields.io/badge/Base%20image-Alpine-brightgreen)](https://hub.docker.com/_/alpine)
 [![IBMCloud cli](https://img.shields.io/badge/IBM%20Cloud-cli-blue)](https://cloud.ibm.com)
+![Container size](https://img.shields.io/docker/image-size/mlsmrc/ibmcloudcli/latest)
+![Docker pulls](https://img.shields.io/docker/pulls/mlsmrc/ibmcloudcli)<br>
 [![Build Status](https://travis-ci.org/mlsmrc/ibmcloudcli_container.svg?branch=master)](https://travis-ci.org/mlsmrc/ibmcloudcli_container)
+
 
 ## Description
 This is the **non-official** IBM Cloud cli container.
 
-The main idea of this container is use it as K8s Job or Cronjob in order to perform scheduled actions on Cloud like monitoring or certificate renewal.
+The main idea of this container is use it to have an operator container belonging to the main container which manages changes such as:
 
-**Size:** ~100Mb 
+- health check
+- TLS certificates renewal
 
-## What is installed inside of it?
+
+## What is the content?
 
 The base image is the [Alpine](https://hub.docker.com/_/alpine).
 
